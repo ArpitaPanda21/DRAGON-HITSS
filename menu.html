@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dragon Hits Menu</title>
+</head>
+<body>
+    <style>
+     @import url('https://fonts.googleapis.com/css2?family=Bungee&family=Rubik+Glitch+Pop&display=swap');
+
+body {
+    font-family: 'Lora', serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: #f0f0f0; /* Fallback background color */
+    background-attachment: fixed;
+    animation: fadeIn 6s ease-in-out;
+    }
+
+        @keyframes fadeIn {
+            from { opacity: 10; }
+            to { opacity: 15; }
+        }
+
+
+header {
+    background-color: #b07aba;
+    color: rgb(246, 250, 250);
+    padding: 100px 0;
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWkXpl7Z8XZXxeGBggBdMswmcHQ-rlqEYaKw&s'); 
+    background-size: cover;
+    background-position: center;
+    margin:2px ;
+    border-radius: 25px;
+    animation: slideInDown 1s ease-in-out;
+}
+
+@keyframes slideInDown {
+            from { transform: translateY(-100%); }
+            to { transform: translateY(0); }
+        }
+
+        nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: rgb(246, 246, 246);
+    margin: 35px;
+    border-radius: 50px;
+    font-size: 1.6em;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+nav ul li a:hover {
+            color: #89c9e4;
+        }
+
+section {
+    padding: 60px;
+    background: rgba(255, 255, 255, 0.8); /* Add a semi-transparent background */
+    margin: 20px;
+    border-radius: 10px;
+    animation: fadeInUp 1s ease-in-out;
+}
+@keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 7; transform: translateY(0); }
+}
+
+#menu {
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwzO2QuQ0pxvdZ-1ofQVhzWgD5hXtwz3fydSIwMpYJ2yGVV6WBAnZ5vnaBEGhOoyR-wKI&usqp=CAU');
+    background-size: cover;
+    background-position: center;
+}
+
+footer {
+    background-image: linear-gradient(rgba(1, 21, 20, 0.7), rgba(2, 84, 80, 0.7));
+            background-color: #0c5d59;
+            color: rgb(253, 250, 251);
+            text-align: center;
+            padding: 10px 0;
+            width: 100%;
+            font-size: 1.4em;
+            margin: 2px;
+            border-radius: 13px;
+            animation: slideInUp 1s ease-in-out;
+        }
+        @keyframes slideInUp {
+            from { transform: translateY(100%); }
+            to { transform: translateY(0); }
+        }
+footer div {
+            color: rgb(251, 252, 247); /* Change this to your desired color */
+            margin-top: 10px;
+        }
+
+        footer div a {
+            color: rgb(245, 245, 245);
+            margin: 0 20px;
+            font-size: 1.2em;
+            text-decoration: none;
+            transition: color 0.3s ease-in-out;
+        }
+
+        footer div a:hover {
+            color: #c0f3f7;
+        }
+
+        h1 {
+            text-align: center;
+            font-family: "Bungee", sans-serif;
+            font-size: 3em;
+            margin: 0;
+            animation: bounceIn 2s ease-in-out;
+        }
+
+        @keyframes bounceIn {
+            from { transform: scale(0.5); opacity: 0; }
+            to { transform: scale(1); opacity: 1; }
+        }
+
+h2 {
+    font-family: 'Merriweather', serif;
+    font-size: 2.7em;
+    margin-bottom: 40px;
+}
+
+h3, h4, h5 {
+    font-family: 'Merriweather', serif;
+    font-size: 1.8em; /* Set the same font size */
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 1.8em;
+}
+
+a {
+    color: #baf3f6;
+    font-family: 'Merriweather', serif;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+select {
+            font-size: 1.3em;
+            padding: 5px;
+            margin: 5px 0;
+            border: 1px solid #17858d;
+            border-radius: 10px;
+        }
+
+        option {
+            font-family: 'Lora', Arial, Helvetica, sans-serif; 
+        }
+
+        button {
+            font-size: 1.1em;
+            padding: 1px;
+            border: 10px solid #013e42;
+            background-color: #02464c;
+            color: rgb(252, 249, 249);
+            border-radius: 20px;
+            cursor: pointer;
+        }
+
+ /* Responsive Design */
+ @media (max-width: 768px) {
+            nav ul {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            nav ul li {
+                margin: 10px 0;
+            }
+
+            section {
+                padding: 20px;
+                margin: 10px;
+            }
+
+            h1 {
+                font-size: 2em;
+            }
+
+            h2 {
+                font-size: 1.8em;
+            }
+
+            h3, h4, h5 {
+                font-size: 1.5em;
+            }
+
+            p {
+                font-size: 1em;
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 1.8em;
+            }
+
+            h2 {
+                font-size: 1.5em;
+            }
+
+            h3, h4, h5 {
+                font-size: 1.2em;
+            }
+
+            p {
+                font-size: 0.9em;
+            }
+        }
+
+    </style>
+    </head>
+<body>
+    <header>
+        <h1>DRAGON HITSS</h1>
+        <h2>MENU</h2>
+        <nav>
+            <ul>
+                <li><a href="index.html#home">HOME</a></li> <!-- Link back to the main page -->
+                <li><a href="menu.html">MENU</a></li>
+                <li><a href="index.html#about">ABOUT US</a></li>
+                <li><a href="index.html#contact">CONTACT</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="menu">
+        <h2>MENU</h2>
+        <p>Check out our delicious menu options below:</p>
+        <form action="order_summary.html" method="get">
+            <h3>STARTER</h3>
+            <select name="starter">
+                <option value="VEG CRISPY - 45Rs.">VEG CRISPY - 45Rs.</option>
+                <option value="FRENCH FRIES - 65Rs.">FRENCH FRIES - 65Rs.</option>
+                <option value="CHICKEN TIKKA - 110Rs.">CHICKEN TIKKA - 110Rs.</option>
+                <option value="PANEER CHILI - 120Rs.">PANEER CHILI - 120Rs.</option>
+                <option value="VEG PAKODA - 55Rs.">VEG PAKODA - 55Rs.</option>
+                <option value="CHICKEN LOLLIPOP MASALA - 100Rs.">CHICKEN LOLLIPOP MASALA - 100Rs.</option>
+                <option value="FINGER CHIPS - 35Rs.">FINGER CHIPS - 35Rs.</option>
+                <option value="MUSHROOM CHILLY - 100Rs.">MUSHROOM CHILLY - 100Rs.</option>
+                <option value="GOBI MANCHURIAN - 80Rs.">GOBI MANCHURIAN - 80Rs.</option>
+            </select>
+
+            <h3>VEG OPTIONS</h3>
+            <select name="veg">
+                <option value="VEG BIRYANI - 120Rs.">VEG BIRYANI - 120Rs.</option>
+                <option value="PULAO - 90Rs.">PULAO - 90Rs.</option>
+                <option value="VEG FRIED RICE - 110Rs.">VEG FRIED RICE - 110Rs.</option>
+                <option value="JEERA RICE - 80Rs.">JEERA RICE - 80Rs.</option>
+                <option value="DAL TADKA - 145Rs.">DAL TADKA - 145Rs.</option>
+                <option value="BUTTER DAL FRY - 130Rs.">BUTTER DAL FRY - 130Rs.</option>
+                <option value="PLAIN DAL - 60Rs.">PLAIN DAL - 60Rs.</option>
+                <option value="VEG JALFFREZI - 65Rs.">VEG JALFFREZI - 65Rs.</option>
+                <option value="MATAR PANEER - 75Rs.">MATAR PANEER - 75Rs.</option>
+                <option value="PALAK PANEER - 160Rs.">PALAK PANEER - 160Rs.</option>
+                <option value="KASHMIRI MALAI KOFTA - 75Rs.">KASHMIRI MALAI KOFTA - 75Rs.</option>
+                <option value="PANEER BHURJI - 145Rs.">PANEER BHURJI - 145Rs.</option>
+                <option value="VEG KURMA - 155Rs.">VEG KURMA - 155Rs.</option>
+            </select>
+
+            <h3>NON-VEG OPTIONS</h3>
+            <select name="nonVeg">
+                <option value="CHICKEN BIRYANI - 150Rs.">CHICKEN BIRYANI - 150Rs.</option>
+                <option value="MUTTON BIRYANI - 230Rs.">MUTTON BIRYANI - 230Rs.</option>
+                <option value="CHICKEN FRIED RICE - 190Rs.">CHICKEN FRIED RICE - 190Rs.</option>
+                <option value="EGG FRIED RICE - 170Rs.">EGG FRIED RICE - 170Rs.</option>
+                <option value="CHILLY CHICKEN GRAVY - 140Rs.">CHILLY CHICKEN GRAVY - 140Rs.</option>
+                <option value="FISH FRY - 120Rs.">FISH FRY - 120Rs.</option>
+                <option value="KADAI CHICKEN - 160Rs.">KADAI CHICKEN - 160Rs.</option>
+                <option value="MUTTON DUM BIRYANI - 280Rs.">MUTTON DUM BIRYANI - 280Rs.</option>
+            </select>
+
+            <h3>DESSERTS</h3>
+            <select name="desserts">
+                <option value="WARM GULAB JAMUN - 15Rs.">WARM GULAB JAMUN - 15Rs.</option>
+                <option value="KHEER - 25Rs.">KHEER - 25Rs.</option>
+                <option value="CUP CAKE - 30Rs.">CUP CAKE - 30Rs.</option>
+                <option value="BLACK FOREST CAKE - 150Rs.">BLACK FOREST CAKE - 150Rs.</option>
+                <option value="RED VELVET CAKE - 120Rs.">RED VELVET CAKE - 120Rs.</option>
+                <option value="CUSTARD PUDDING - 35Rs.">CUSTARD PUDDING - 35Rs.</option>
+                <option value="CHOCOLATE BROWNIE - 50Rs.">CHOCOLATE BROWNIE - 50Rs.</option>
+                <option value="FRUIT SALAD - 40Rs.">FRUIT SALAD - 40Rs.</option>
+            </select>
+
+            <h3>ICE CREAM</h3>
+            <select name="iceCream">
+                <option value="VANILLA ICE CREAM - 20Rs.">VANILLA ICE CREAM - 20Rs.</option>
+                <option value="BLUE BERRY ICE CREAM - 30Rs.">BLUE BERRY ICE CREAM - 30Rs.</option>
+                <option value="KESAR PISTA ICE CREAM - 40Rs.">KESAR PISTA ICE CREAM - 40Rs.</option>
+                <option value="CHOCOLATE ICE CREAM - 25Rs.">CHOCOLATE ICE CREAM - 25Rs.</option>
+                <option value="STRAWBERRY ICE CREAM - 20Rs.">STRAWBERRY ICE CREAM - 20Rs.</option>
+                <option value="MANGO ICE CREAM - 25Rs.">MANGO ICE CREAM - 25Rs.</option>
+                <option value="PISTACHIO KULFI - 30Rs.">PISTACHIO KULFI - 30Rs.</option>
+                <option value="BUTTERSCOTCH ICE CREAM - 30Rs.">BUTTERSCOTCH ICE CREAM - 30Rs.</option>
+                <option value="COOKIE AND CREAM ICE CREAM - 35Rs.">COOKIE AND CREAM ICE CREAM - 35Rs.</option>
+            </select>
+
+            <br>
+            <button type="submit">PLACE ORDER</button>
+        </form>
+    </section>
+
+    <footer>
+        &copy; 2024 DRAGON HITSS. All rights reserved.
+        <div>
+            <a href="https://www.facebook.com/dragonhits" target="_blank">Facebook</a> |
+            <a href="https://www.twitter.com/dragonhits" target="_blank">Twitter</a> |
+            <a href="https://www.instagram.com/dragonhits" target="_blank">Instagram</a> |
+            <a href="https://www.linkedin.com/company/dragonhits" target="_blank">LinkedIn</a>
+        </div>
+    </footer>
+
+</body>
+</html>

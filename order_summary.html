@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ORDER SUMMARY</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bungee&family=Rubik+Glitch+Pop&display=swap');
+
+
+        body {
+             font-family: 'Lora', serif;
+             margin: 0;
+             padding: 0;
+             background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwzO2QuQ0pxvdZ-1ofQVhzWgD5hXtwz3fydSIwMpYJ2yGVV6WBAnZ5vnaBEGhOoyR-wKI&usqp=CAU');
+             background-size: cover;
+             background-position: center;
+             text-align: center;
+             animation: fadeIn 6s ease-in-out;
+    }
+
+        @keyframes fadeIn {
+            from { opacity: 10; }
+            to { opacity: 15; }
+        }
+
+    
+    header {
+            background-color: #b07aba;
+            color: rgb(246, 250, 250);
+            padding: 100px 0;
+            background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWkXpl7Z8XZXxeGBggBdMswmcHQ-rlqEYaKw&s'); 
+            background-size: cover;
+            background-position: center;
+            margin:2px ;
+            border-radius: 25px;
+            animation: slideInDown 1s ease-in-out;
+}
+
+@keyframes slideInDown {
+            from { transform: translateY(-100%); }
+            to { transform: translateY(0); }
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+}
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+}
+
+        nav ul li a {
+             color: rgb(246, 246, 246);
+             margin: 35px;
+             border-radius: 50px;
+             font-size: 1.6em;
+             font-weight: bold;
+             transition: color 0.3s ease-in-out;
+}
+        nav ul li a:hover {
+            color: #89c9e4;
+        }
+
+        section {
+            padding: 60px;
+            background: rgba(249, 248, 248, 0.8);
+            margin: 30px;
+            border-radius: 30px;
+        }
+
+        footer {
+            background-image: linear-gradient(rgba(1, 21, 20, 0.7), rgba(2, 84, 80, 0.7));
+            background-color: #0c5d59;
+            color: rgb(253, 250, 251);
+            text-align: center;
+            padding: 10px 0;
+            width: 100%;
+            font-size: 1.4em;
+            margin: 2px;
+            border-radius: 13px;
+            animation: slideInUp 1s ease-in-out;
+        }
+        @keyframes slideInUp {
+            from { transform: translateY(100%); }
+            to { transform: translateY(0); }
+        }
+footer div {
+            color: rgb(251, 252, 247); /* Change this to your desired color */
+            margin-top: 10px;
+        }
+
+        footer div a {
+            color: rgb(245, 245, 245);
+            margin: 0 20px;
+            font-size: 1.2em;
+            text-decoration: none;
+            transition: color 0.3s ease-in-out;
+        }
+
+        footer div a:hover {
+            color: #c0f3f7;
+        }
+
+        table {
+            width: 90%;
+            margin: auto;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            border: 1px solid #03464a;
+            padding: 10px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #114e52;
+            color: white;
+        }
+
+        td {
+            background-color: #d5f1ef;
+        }
+
+        form {
+            margin: auto;
+            max-width: 660px;
+            padding: 2px;
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 40px;
+        }
+
+        .category {
+            margin-bottom: 50px;
+        }
+
+        select, input {
+            font-size: 1.3em;
+            padding: 5px;
+            margin: 5px 0;
+            border: 1px solid #c9eaec;
+            border-radius: 10px;
+            width: 100%;
+        }
+
+        label {
+            font-size: 1.2em;
+            margin: 10px 0;
+            display: block;
+        }
+
+        button {
+            font-size: 1.6em;
+            padding: 5px;
+            border: 10px solid  #056168;
+            background-color: #056168;
+            color: rgb(252, 249, 249);
+            border-radius: 70px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #146e6d;
+        }
+        
+h1 {
+    text-align: center;
+    font-family: "Bungee", sans-serif;
+    font-size: 3em;
+    margin: 0;
+}
+
+h2{
+    text-align: center;
+    font-family: "lora", sans-serif;
+    font-size: 1.9em;
+    text-decoration: underline;
+    margin: 10;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>DRAGON HITSS</h1>
+        <h2>ORDER SUMMARY</h2>
+        <nav>
+            <ul>
+                <li><a href="index.html#home">HOME</a></li>
+                <li><a href="index.html#about">ABOUT US</a></li>
+                <li><a href="index.html#contact">CONTACT</a></li>
+                <li><a href="menu.html">BACK TO MENU</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="order-summary">
+        <h2>Your Order</h2>
+        <form id="orderForm">
+            <div class="category">
+                <h3>Starter</h3>
+                <label><input type="checkbox" name="starter" value="45" data-item="VEG CRISPY"> VEG CRISPY - 45Rs.</label>
+                <label><input type="checkbox" name="starter" value="65" data-item="FRENCH FRIES"> FRENCH FRIES - 65Rs.</label>
+                <label><input type="checkbox" name="starter" value="110" data-item="CHICKEN TIKKA"> CHICKEN TIKKA - 110Rs.</label>
+                <label><input type="checkbox" name="starter" value="55" data-item="VEG PAKODA"> VEG PAKODA - 55Rs.</label>
+                <label><input type="checkbox" name="starter" value="100" data-item="CHICKEN LOLLIPOP MASALA"> CHICKEN LOLLIPOP MASALA - 100Rs.</label>
+                <label><input type="checkbox" name="starter" value="35" data-item="FINGER CHIPS "> FINGER CHIPS - 35Rs.</label>
+                <label><input type="checkbox" name="starter" value="100" data-item="MUSHROOM CHILLY"> MUSHROOM CHILLY - 100Rs.</label>
+                <label><input type="checkbox" name="starter" value="80" data-item="GOBI MANCHURIAN"> GOBI MANCHURIAN - 80Rs.</label>
+            </div>
+
+            <div class="category">
+                <h3>Veg Option</h3>
+                <label><input type="checkbox" name="veg" value="120" data-item="VEG BIRYANI"> VEG BIRYANI - 120Rs.</label>
+                <label><input type="checkbox" name="veg" value="90" data-item="PULAO"> PULAO - 90Rs.</label>
+                <label><input type="checkbox" name="veg" value="110" data-item="VEG FRIED RICE"> VEG FRIED RICE - 110Rs.</label>
+                <label><input type="checkbox" name="veg" value="80" data-item="JEERA RICE"> JEERA RICE - 80Rs.</label>
+                <label><input type="checkbox" name="veg" value="145" data-item="DAL TADKA"> DAL TADKA - 145Rs.</label>
+                <label><input type="checkbox" name="veg" value="130" data-item="BUTTER DAL FRY"> BUTTER DAL FRY - 130Rs.</label>
+                <label><input type="checkbox" name="veg" value="60" data-item="PLAIN DAL"> PLAIN DAL - 60Rs.</label>
+                <label><input type="checkbox" name="veg" value="65" data-item="VEG JALFFREZI"> VEG JALFFREZI - 65Rs.</label>
+                <label><input type="checkbox" name="veg" value="75" data-item="MATAR PANEER"> MATAR PANEER - 75Rs.</label>
+                <label><input type="checkbox" name="veg" value="160" data-item="PALAK PANEER"> PALAK PANEER - 160Rs.</label>
+                <label><input type="checkbox" name="veg" value="75" data-item="KASHMIRI MALAI KOFTA"> KASHMIRI MALAI KOFTA - 75Rs.</label>
+                <label><input type="checkbox" name="veg" value="145" data-item="PANEER BHURJI"> PANEER BHURJI - 145Rs.</label>
+                <label><input type="checkbox" name="veg" value="155" data-item="VEG KURMA"> VEG KURMA - 155Rs.</label>
+                <label><input type="checkbox" name="veg" value="100" data-item="VEG MANCHURIAN"> VEG MANCHURIAN - 100Rs.</label>
+            </div>
+
+            <div class="category">
+                <h3>Non-Veg Option</h3>
+                <label><input type="checkbox" name="nonVeg" value="150" data-item="CHICKEN BIRYANI"> CHICKEN BIRYANI - 150Rs.</label>
+                <label><input type="checkbox" name="nonVeg" value="230" data-item="MUTTON BIRYANI"> MUTTON BIRYANI - 230Rs.</label>
+                <label><input type="checkbox" name="nonVeg" value="190" data-item="CHICKEN FRIED RICE"> CHICKEN FRIED RICE - 190Rs.</label>
+                <label><input type="checkbox" name="nonVeg" value="170" data-item="EGG FRIED RICE"> EGG FRIED RICE - 170Rs.</label>
+                <label><input type="checkbox" name="nonVeg" value="140" data-item="CHILLY CHICKEN GRAVY"> CHILLY CHICKEN GRAVY - 140Rs.</label>
+                <label><input type="checkbox" name="nonVeg" value="120" data-item="FISH FRY"> FISH FRY - 120Rs.</label>
+                <label><input type="checkbox" name="nonVeg" value="160" data-item="KADAI CHICKEN"> KADAI CHICKEN - 160Rs.</label>
+                <label><input type="checkbox" name="nonVeg" value="280" data-item="MUTTON DUM BIRYANI"> MUTTON DUM BIRYANI - 280Rs.</label>
+            </div>
+
+            <div class="category">
+                <h3>Desserts</h3>
+                <label><input type="checkbox" name="desserts" value="15" data-item="WARM GULAB JAMUN"> WARM GULAB JAMUN - 15Rs.</label>
+                <label><input type="checkbox" name="desserts" value="25" data-item="KHEER"> KHEER - 25Rs.</label>
+                <label><input type="checkbox" name="desserts" value="30" data-item="CUP CAKE"> CUP CAKE - 30Rs.</label>
+                <label><input type="checkbox" name="desserts" value="150" data-item="BLACK FOREST CAKE"> BLACK FOREST CAKE - 150Rs.</label>
+                <label><input type="checkbox" name="desserts" value="120" data-item="RED VELVET CAKE"> RED VELVET CAKE - 120Rs.</label>
+                <label><input type="checkbox" name="desserts" value="35" data-item="CUSTARD PUDDING"> CUSTARD PUDDING - 35Rs.</label>
+                <label><input type="checkbox" name="desserts" value="50" data-item="CHOCOLATE BROWNIE"> CHOCOLATE BROWNIE - 50Rs.</label>
+                <label><input type="checkbox" name="desserts" value="40" data-item="FRUIT SALAD"> FRUIT SALAD - 40Rs.</label>
+            </div>
+
+            <div class="category">
+                <h3>Ice Cream</h3>
+                <label><input type="checkbox" name="iceCream" value="20" data-item="VANILLA ICE CREAM"> VANILLA ICE CREAM - 20Rs.</label>
+                <label><input type="checkbox" name="iceCream" value="30" data-item="BLUE BERRY ICE CREAM"> BLUE BERRY ICE CREAM - 30Rs.</label>
+                <label><input type="checkbox" name="iceCream" value="40" data-item="KESAR PISTA ICE CREAM"> KESAR PISTA ICE CREAM - 40Rs.</label>
+                <label><input type="checkbox" name="iceCream" value="25" data-item="CHOCOLATE ICE CREAM"> CHOCOLATE ICE CREAM - 25Rs..</label>
+                <label><input type="checkbox" name="iceCream" value="20" data-item="STRAWBERRY ICE CREAM"> STRAWBERRY ICE CREAM - 20Rs.</label>
+                <label><input type="checkbox" name="iceCream" value="25" data-item="MANGO ICE CREAM"> MANGO ICE CREAM - 25Rs.</label>
+                <label><input type="checkbox" name="iceCream" value="30" data-item="PISTACHIO KULFI"> PISTACHIO KULFI - 30Rs.</label>
+                <label><input type="checkbox" name="iceCream" value="30" data-item="BUTTERSCOTCH ICE CREAM"> BUTTERSCOTCH ICE CREAM - 30Rs.</label>
+                <label><input type="checkbox" name="iceCream" value="35" data-item="COOKIE AND CREAM ICE CREAM"> COOKIE AND CREAM ICE CREAM - 35Rs.</label>
+            </div>
+
+            <button type="button" onclick="addItems()">Add Items</button>
+        </form>
+
+        <h2>ORDER SUMMARY</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Category</th>
+                    <th>Item</th>
+                    <th>Quantity</th>
+                    <th>Price</th>
+                    <th>Total</th>
+                </tr>
+            </thead>
+            <tbody id="orderTableBody">
+                <!-- Order summary rows will go here -->
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="4"><strong>Grand Total</strong></td>
+                    <td id="grandTotal">___Rs.</td>
+                </tr>
+            </tfoot>
+        </table>
+    </section>
+
+    <footer>
+        &copy; 2024 DRAGON HITSS. All rights reserved.
+        <div>
+            <a href="https://www.facebook.com/dragonhits" target="_blank">Facebook</a> |
+            <a href="https://www.twitter.com/dragonhits" target="_blank">Twitter</a> |
+            <a href="https://www.instagram.com/dragonhits" target="_blank">Instagram</a> |
+            <a href="https://www.linkedin.com/company/dragonhits" target="_blank">LinkedIn</a>
+        </div>
+    </footer>
+
+    <script src="order_summary.js"></script>
+</body>
+</html>

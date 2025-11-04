@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dragon Hits Here</title>
+</head>
+<body>
+    <style>
+     
+     @import url('https://fonts.googleapis.com/css2?family=Bungee&family=Rubik+Glitch+Pop&display=swap');
+
+
+    body {
+    font-family: 'Lora', serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-image:linear-gradient(rgba(252, 251, 253, 0.7), rgba(249, 246, 250, 0.7)), url('data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxISEhUSEhIWFRUXFxUXFxcVFx0XFxcXFRUXFxUXFxcdHSggGB0lHRcVITEiJSkrLi4uFx8zODMtNygtLisBCgoKDQ0NFQ8PFSsZFRkrNy0rKysrLTcrLSs3KzcrLTc3LTcrLS0rLS0tLSsrKysrKysrKysrKysrKysrKysrK//AABEIAKgBLAMBIgACEQEDEQH/xAAWAAEBAQAAAAAAAAAAAAAAAAAAAQf/xAAbEAEBAQACAwAAAAAAAAAAAAAAEQHh8CFhkf/EABUBAQEAAAAAAAAAAAAAAAAAAAAB/8QAFBEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEQMRAD8A2gIYIAAAAAAACgAAAhQAAAABQAAAQMAAAAAUAEIAAAAQoAAAABAAAMAAAwwANAAAgAICgAAUAAAoAaAAAAAAaGgAAihoAAAAAGAAUAAAEoKYAAAAAAAAABoAKgABQANAAAwCAAABAAAAAAKAAAAAFAADAAAAIAAABQAAAAAAAAKABgAAAGFIsBABQAQAAAACgAGAAAGgAAABBQAAAQAAKABpQAoQAAAAAgsBDAAAgAAoAAAIAAAAAClCggAAYG6KACAAGgAAUAAANAAoABO+AAAAAAAAAAAAAKBugEAAAAIAAAAAQAADAAAAAAhQAIAT0AAAAAAqAAaABgKgAYAAKgAYABoALqAAAAAAAAAAAAAKgAQAAAAIAYAAAAAAAAAAaAAAGBoAEAAAAAAAIEAAAAAAAL28B9AAADQAN0AMAADAAAAAANADNMAAAAAMAACgAAAABQAAACALiG6KACAAAAEAFABAAAAU0AQAFCgAAIAAQACgAAAAAGgKACGACv/Z'); 
+    background-size: cover;
+    background-attachment: fixed;
+    animation: fadeIn 6s ease-in-out;
+    }
+
+        @keyframes fadeIn {
+            from { opacity: 10; }
+            to { opacity: 15; }
+        }
+
+header {
+
+    background-color: #b07aba;
+    color: rgb(246, 250, 250);
+    padding: 100px 0;
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWkXpl7Z8XZXxeGBggBdMswmcHQ-rlqEYaKw&s'); 
+    background-size: cover;
+    background-position: center;
+    margin:2px ;
+    border-radius: 25px;
+    animation: slideInDown 1s ease-in-out;
+}
+
+@keyframes slideInDown {
+            from { transform: translateY(-100%); }
+            to { transform: translateY(0); }
+        }
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: rgb(246, 246, 246);
+    margin: 35px;
+    border-radius: 50px;
+    font-size: 1.6em;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+nav ul li a:hover {
+            color: #89c9e4;
+        }
+
+section {
+    
+    padding: 60px;
+    background: rgba(255, 255, 255, 0.8); /* Add a semi-transparent background */
+    margin: 25px;
+    border-radius: 30px;
+    animation: fadeInUp 1s ease-in-out;
+}
+@keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 7; transform: translateY(0); }
+        }
+
+#home {
+    background-image:url('home.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+#menu {
+    background-image:url('menu.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+#about {
+    background-image:url('about_us.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+#contact {
+    background-image:url('contact.jpeg');
+    background-size: cover;
+    background-position: center;
+}
+
+#menu ul {
+    list-style: none;
+    padding: 0;
+}
+
+#menu ul li {
+    padding: 5px 0;
+    font-family: 'Lora', Arial, Helvetica, sans-serif; 
+    font-size: 1em;
+}
+
+footer {
+            background-image: linear-gradient(rgba(1, 21, 20, 0.7), rgba(2, 84, 80, 0.7));
+            background-color: #0c5d59;
+            color: rgb(253, 250, 251);
+            text-align: center;
+            padding: 10px 0;
+            width: 100%;
+            bottom: 0;
+            font-size: 1.4em;
+            margin: 2px;
+            border-radius: 13px;
+            animation: slideInUp 1s ease-in-out;
+        }
+        @keyframes slideInUp {
+            from { transform: translateY(100%); }
+            to { transform: translateY(0); }
+        }
+
+footer div {
+            color: rgb(251, 252, 247); 
+            margin-top: 10px;
+        }
+
+        footer div a {
+            color: rgb(245, 245, 245);
+            margin: 0 20px;
+            font-size: 1.2em;
+            text-decoration: none;
+            transition: color 0.3s ease-in-out;
+        }
+
+        footer div a:hover {
+            color: #c0f3f7;
+        }
+        h1 {
+            text-align: center;
+            font-family: "Bungee", sans-serif;
+            font-size: 3em;
+            margin: 0;
+            animation: bounceIn 2s ease-in-out;
+        }
+
+        @keyframes bounceIn {
+            from { transform: scale(0.5); opacity: 0; }
+            to { transform: scale(1); opacity: 1; }
+        }
+
+h2 {
+    font-family: 'Merriweather', serif;
+    font-size: 2.5em;
+    margin-bottom: 40px;
+}
+
+h3, h4, h5 {
+    font-family: 'Merriweather', serif;
+    font-size: 1.3em; 
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 1.1em;
+}
+
+#home p, #about p , #contact p {
+    font-size: 1.7em;
+}
+
+#menu p{
+    font-size: 2em;
+}
+
+a {
+    color: #41022a;
+    font-family: 'Merriweather', serif;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    section {
+        padding: 20px;
+        margin: 10px;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    h2 {
+        font-size: 1.8em;
+    }
+
+    h3, h4, h5 {
+        font-size: 1.5em;
+    }
+
+    p {
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.8em;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    h3, h4, h5 {
+        font-size: 1.2em;
+    }
+
+    p {
+        font-size: 0.9em;
+    }
+}
+    </style>
+    <header>
+        <h1>DRAGON HITSS</h1>
+        <h2>WELCOME TO OUR RESTAURANT</h2>
+        <nav>
+            <ul>
+                <li><a href="#home">HOME</a></li>
+                <li><a href="menu.html">MENU</a></li> 
+                <li><a href="#about">ABOUT US</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="home">
+        <h2>HOME</h2>
+        <p>Welcome to Dragon Hitss, where every meal is a delight!!!!</p>
+        
+    </section>
+
+    <section id="menu">
+        <h2>MENU</h2>
+        <p>Check out our delicious menu options...</p>
+    </section>
+
+    <section id="about">
+        <h2>ABOUT US</h2>
+        <p>We are a family-owned restaurant dedicated to serving fresh and delicious meals. Our chefs use the finest ingredients to create dishes that will delight your taste buds. At Dragon Hitss, we believe in quality, service, and creating a warm and inviting atmosphere for our guests. Come and experience the best dining experience with us!</p><br>
+        <p>THANK YOU...</p><br>
+        <p>WELCOME AGAIN!!!</p>
+    </section>
+    
+    <section id="contact">
+        <h2>CONTACT</h2>
+        <p>You can reach us at: <a href="mailto:info@dragonhitss.com">info@dragonhitss.com</a></p>
+    </section>
+    
+    <footer>
+        &copy; 2024 DRAGON HITSS. All rights reserved.
+        <div>
+            <a href="https://www.facebook.com/dragonhitss" target="_blank">Facebook</a> |
+            <a href="https://www.twitter.com/dragonhitss" target="_blank">Twitter</a> |
+            <a href="https://www.instagram.com/dragonhitss" target="_blank">Instagram</a> |
+            <a href="https://www.linkedin.com/company/dragonhitss" target="_blank">LinkedIn</a>
+        </div>
+    </footer>
+
+</body>
+</html>
